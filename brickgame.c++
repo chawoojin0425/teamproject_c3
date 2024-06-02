@@ -103,7 +103,7 @@ int main(int argc, char* argv[]) {
 
     Pdl pdl;
     Ball ball;
-    // 패들과 공의 구조체를 가각 'pdl'과 'ball'로 선언.
+    // 패들과 공의 구조체를 각각 'pdl'과 'ball'로 선언.
     Block blocks[ROWS][COLS];
     // 2차원 배열 'blocks'를 선언함.
 
