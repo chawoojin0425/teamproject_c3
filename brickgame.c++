@@ -125,7 +125,7 @@ int main(int argc, char* argv[]) {
     SDL_Event e;        // 아래에 SDL 이벤트를 구조체에 저장
     float dt = 0;       // dt 변수에 프레임 시간 간격을 나타냄.
     Uint32 last = SDL_GetTicks();
-    // Unit 32: 부호 없는 정수형으로 시간을 저장
+    // Unit 32: 32비트 부호 없는 정수형으로 시간을 저장
     // 현재 시스템 시간을 밀리초로 얻고 'last'라고 하는 변수에 저장.
     
 
