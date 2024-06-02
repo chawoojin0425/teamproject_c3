@@ -92,7 +92,7 @@ int main(int argc, char* argv[]) {
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     // SDL_CreateRenderer (1. 렌더링될 창을 나타냄., 2. 렌더러 인덱스 (-1: 기본 렌더러) 3. 랜더링의 특성)
     // SDL_RENDERER_ACCELERATED: 하드웨어를 가속하여 렌더링 속도를 향상시킴.
-    // SDL_RENDERER_PRESENTVSYNC: 렌더링된 프레임을 디스플레이의 새로고침 속도와 동기화하여 화면을 부드럽게 이어줌.(게임에 중요함.) -> 하지 않을 시 화면 찢김 현상(어떤 부분은 빠르고 어떤 부분은 느림.)
+    // SDL_RENDERER_PRESENTVSYNC: 렌더링된 프레임을 디스플레이의 새로고침 속도와 동기화(synchronization)하여 화면을 부드럽게 이어줌.(게임에 중요함.) -> 하지 않을 시 화면 찢김 현상(어떤 부분은 빠르고 어떤 부분은 느림.)
     if (!ren) {
         printf("Renderer Creation Failed: %s\n", SDL_GetError());
         SDL_DestroyWindow(win);
